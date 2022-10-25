@@ -11,12 +11,12 @@ export default function App() {
   return(
     <Router>
       <Routes>
-        <Route to='/tietoja' element={ <About/> }/>
-        <Route to='/venevuokraus' element={ <BoatRent/> }/>
-        <Route to='/ota-yhteytta' element={ <Contact/> }/>
-        <Route to='/mokkivuokraus' element={ <CottageRent/> }/>
-        <Route to='/vesijettivuokraus' element={ <JetSkiRent/> }/>
-        <Route to='/' element={ <Landing/> }/>
+        <Route path='/tietoja' element={ <About/> }/>
+        <Route path='/venevuokraus' element={ <BoatRent/> }/>
+        <Route path='/ota-yhteytta' element={ <Contact/> }/>
+        <Route path='/mokkivuokraus' element={ <CottageRent/> }/>
+        <Route path='/vesijettivuokraus' element={ <JetSkiRent/> }/>
+        <Route path='/' element={ <Landing/> }/>
       </Routes>
     </Router>
   )

@@ -1,32 +1,30 @@
 import './Landing.css'
+import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 
 export default function Landing() {
     if(window.innerWidth < 768) {
         return(
             <div className='container'>
                 <header>
-
+                    <Navbar page="landing"/>
                 </header>
                 <main>
 
                 </main>
-                <footer>
-
-                </footer>
+                <Footer />
             </div>
         )
     }else {
         return(
             <div className='container'>
                 <header>
-
+                    <Navbar page="landing"/>
                 </header>
                 <main>
 
                 </main>
-                <footer>
-
-                </footer>
+                <Footer />
             </div>
         )
     }
