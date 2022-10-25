@@ -4,7 +4,6 @@
     height: 10vh;
     max-height: 10vh;
     font-family: 'Montserrat';
-    border: 1px solid red;
 }
 
 @media (min-width: 768px) {
