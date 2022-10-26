@@ -23,7 +23,8 @@
         color: rgb(220, 220, 220);
     }
 
-    #navbar * li {
+    #navbar > div > ul > li {
         text-underline-offset: 1vh;
+        opacity: 0;
     }
 }

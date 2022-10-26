@@ -4,15 +4,38 @@ import { useEffect } from 'react'
 
 export default function Navbar(props) {
     useEffect(() => {
-        if(window.innerWidth < 768) { return }
+        const landingLink = document.getElementById('landingLink')
+        const rentLink = document.getElementById('rentLink')
+        const aboutLink = document.getElementById('aboutLink')
+        const contactLink = document.getElementById('contactLink')
 
+        /*Underline nav item corresponding to current page*/
+        if(window.innerWidth < 768) { return }
         switch(props.page) {
-            case 'landing': document.getElementById('landingLink').style.textDecoration = 'underline'; break;
-            case 'rent': document.getElementById('rentLink').style.textDecoration = 'underline'; break;
-            case 'about': document.getElementById('aboutLink').style.textDecoration = 'underline'; break;
-            case 'contact': document.getElementById('contactLink').style.textDecoration = 'underline'; break;
+            case 'landing':
+                landingLink.style.textDecoration = 'underline';
+                break;
+            case 'rent':
+                rentLink.style.textDecoration = 'underline';
+                break;
+            case 'about':
+                aboutLink.style.textDecoration = 'underline';
+                break;
+            case 'contact':
+                contactLink.style.textDecoration = 'underline';
+                break;
             default: break;
         }
+
+        /*Animate nav items*/
+        landingLink.style.opacity = 1;
+        landingLink.style.transition = 'opacity 0.5s ease-in';
+        rentLink.style.opacity = 1;
+        rentLink.style.transition = 'opacity 1s ease-in';
+        aboutLink.style.opacity = 1;
+        aboutLink.style.transition = 'opacity 1.5s ease-in';
+        contactLink.style.opacity = 1;
+        contactLink.style.transition = 'opacity 2s ease-in';
     })
 
     if(window.innerWidth < 768) {
@@ -38,7 +61,16 @@ export default function Navbar(props) {
                 <div>
                     <ul className="menu menu-horizontal p-0">
                         <li id='landingLink'><Link to='/'>Etusivu</Link></li>
-                        <li id='rentLink'><Link>Vuokraus</Link></li>
+                        <li id='rentLink' tabIndex={0}>
+                            <a>Vuokraus
+                            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+                            </a>
+                            <ul className="p-2 bg-neutral">
+                                <li><Link to='/vesijettivuokraus'>Jettivuokraus</Link></li>
+                                <li><Link to='/venevuokraus'>Venevuokraus</Link></li>
+                                <li><Link to='/mokkivuokraus'>Mökkivuokraus</Link></li>
+                            </ul>
+                        </li>
                         <li id='aboutLink'><Link to='/tietoja'>Tietoja</Link></li>
                         <li id='contactLink'><Link to='/ota-yhteytta'>Ota yhteyttä</Link></li>
                     </ul>
