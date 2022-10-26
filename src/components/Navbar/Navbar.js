@@ -49,6 +49,7 @@ export default function Navbar(props) {
             document.getElementById('dropdown').style.marginRight = '0vw'
             document.getElementById('dropdown').style.opacity = 0.99;
             document.getElementById('dropdown').style.transition = 'opacity 0.2s ease-in-out'
+            document.getElementById('dropdown').style.webkitTransition = '-webkit-opacity 0.2s ease-in-out'
         }else {
             document.getElementById('dropdown').style.opacity = 0;
             document.getElementById('dropdown').style.transition = 'opacity 0.2s ease-in-out'
