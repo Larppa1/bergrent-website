@@ -10,7 +10,7 @@ export default function Navbar(props) {
     const dropdownPrimaryAnim = () => {
         if(!menuBtnClicked) {
             document.getElementById('dropdownSecondary').style.transition = 'all 0.4s ease-in-out'
-            document.getElementById('dropdown').style.opacity = '1'
+            document.getElementById('dropdown').style.opacity = '0.99'
             setMenuBtnClicked(true)
         }else {
             document.getElementById('dropdown').style.opacity = '0'
@@ -28,7 +28,7 @@ export default function Navbar(props) {
         if(!clicked) {
             document.getElementById('dropdownSecondary').style.transition = 'all 0.4s ease-in-out'
             document.getElementById('dropdown').style.marginRight = '35vw'
-            document.getElementById('dropdownSecondary').style.opacity = '1'
+            document.getElementById('dropdownSecondary').style.opacity = '0.95'
             document.getElementById('dropdownSecondary').style.visibility = 'visible'
             setClicked(true)
         }else {
