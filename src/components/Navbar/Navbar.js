@@ -47,12 +47,13 @@ export default function Navbar(props) {
         if(!menuBtnClicked) {
             setMenuBtnClicked(true)
             document.getElementById('dropdown').style.marginRight = '0vw'
-            document.getElementById('dropdown').style.opacity = 1;
+            document.getElementById('dropdown').style.opacity = 0.99;
             document.getElementById('dropdown').style.transition = 'opacity 0.2s ease-in-out'
         }else {
             document.getElementById('dropdown').style.opacity = 0;
             document.getElementById('dropdown').style.transition = 'opacity 0.2s ease-in-out'
             document.getElementById('dropdown').style.transform = 'translate(0vw)'
+            document.getElementById('dropdownSecondary').style.display = 'none'
             document.getElementById('dropdownSecondary').style.opacity = 0;
             document.getElementById('dropdownSecondary').style.transition = 'opacity 0.2s ease-in-out'
             setMenuBtnClicked(false)
@@ -66,11 +67,13 @@ export default function Navbar(props) {
             setClicked(true)
             document.getElementById('dropdown').style.marginRight = '35vw'
             document.getElementById('dropdown').style.transition = 'margin-right 0.2s ease-in-out'
-            document.getElementById('dropdownSecondary').style.opacity = 1;
+            document.getElementById('dropdownSecondary').style.display = 'inline'
+            document.getElementById('dropdownSecondary').style.opacity = 0.98;
             document.getElementById('dropdownSecondary').style.transition = 'opacity 0.4s ease-in-out'
         }else {
             document.getElementById('dropdown').style.marginRight = '0vw'
             document.getElementById('dropdown').style.transition = 'margin-right 0.2s ease-in-out'
+            document.getElementById('dropdownSecondary').style.display = 'none'
             document.getElementById('dropdownSecondary').style.opacity = 0;
             document.getElementById('dropdownSecondary').style.transition = 'opacity 0.4s ease-in-out'
             setClicked(false)
@@ -104,27 +107,6 @@ export default function Navbar(props) {
                         <li><Link to='/ota-yhteytta'>Ota yhteyttä</Link></li>
                     </ul>
                 </div>
-                
-                {/* <div className="flex-none dropdown dropdown-end">
-                    <label tabIndex={0} className="btn btn-square btn-ghost">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                    </label>
-                    <ul id='dropdown' tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
-                        <li><Link to='/'>Etusivu</Link></li>
-                        <div className="dropdown">
-                            <li tabIndex={0}>
-                                <Link onClick={dropdownSecondary}>Vuokraus</Link>
-                            </li>
-                            <ul id='dropdownSecondary' tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
-                                <li><Link to='/vesijettivuokraus'>Jettivuokraus</Link></li>
-                                <li><Link to='/venevuokraus'>Venevuokraus</Link></li>
-                                <li><Link to='/mokkivuokraus'>Mökkivuokraus</Link></li>
-                            </ul>
-                        </div>
-                        <li><Link to='/tietoja'>Tietoja</Link></li>
-                        <li><Link to='/ota-yhteytta'>Ota yhteyttä</Link></li>
-                    </ul>
-                </div> */}
             </div>
         )
     }else {
