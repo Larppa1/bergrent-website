@@ -12,8 +12,10 @@ export default function Navbar(props) {
             setMenuBtnClicked(true)
             document.getElementById('dropdown').style.marginRight = '0vw'
             document.getElementById('dropdown').style.opacity = 1;
+            document.getElementById('dropdown').style.transition = 'opacity 0.2s ease-in-out'
         }else {
             document.getElementById('dropdown').style.opacity = 0;
+            document.getElementById('dropdown').style.transition = 'opacity 0.2s ease-in-out'
             document.getElementById('dropdown').style.transform = 'translate(0vw)'
             document.getElementById('dropdownSecondary').style.display = 'none'
             document.getElementById('dropdownSecondary').style.opacity = 0;
@@ -29,11 +31,13 @@ export default function Navbar(props) {
             setClicked(true)
             document.getElementById('dropdown').style.marginRight = '35vw'
             document.getElementById('dropdownSecondary').style.display = 'block'
-            document.getElementById('dropdownSecondary').style.opacity = 1;
+            document.getElementById('dropdownSecondary').style.opacity = 1
+            document.getElementById('dropdownSecondary').style.transition = 'opacity 0.2s ease-in-out'
         }else {
             document.getElementById('dropdown').style.marginRight = '0vw'
             document.getElementById('dropdownSecondary').style.display = 'none'
             document.getElementById('dropdownSecondary').style.opacity = 0;
+            document.getElementById('dropdownSecondary').style.transition = 'opacity 0.2s ease-in-out'
             setClicked(false)
         }
     }
