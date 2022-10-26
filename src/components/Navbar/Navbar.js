@@ -67,13 +67,13 @@ export default function Navbar(props) {
 
         /*Animate nav items*/
         landingLink.style.opacity = 1;
-        landingLink.style.transition = 'opacity 0.5s ease-in'
+        landingLink.style.transition = 'opacity 0.6s ease-in'
         rentLink.style.opacity = 1
-        rentLink.style.transition = 'opacity 1s ease-in'
+        rentLink.style.transition = 'opacity 0.8s ease-in'
         aboutLink.style.opacity = 1
-        aboutLink.style.transition = 'opacity 1.5s ease-in'
+        aboutLink.style.transition = 'opacity 1s ease-in'
         contactLink.style.opacity = 1
-        contactLink.style.transition = 'opacity 2s ease-in'
+        contactLink.style.transition = 'opacity 1.2s ease-in'
     })
 
     if(window.innerWidth < 768) {
