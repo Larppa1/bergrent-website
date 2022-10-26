@@ -28,7 +28,7 @@ export default function Navbar(props) {
         if(!clicked) {
             setClicked(true)
             document.getElementById('dropdown').style.marginRight = '35vw'
-            document.getElementById('dropdownSecondary').style.display = 'inline'
+            document.getElementById('dropdownSecondary').style.display = 'block'
             document.getElementById('dropdownSecondary').style.opacity = 1;
         }else {
             document.getElementById('dropdown').style.marginRight = '0vw'

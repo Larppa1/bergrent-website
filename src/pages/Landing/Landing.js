@@ -10,7 +10,7 @@ export default function Landing() {
                     <Navbar page="landing"/>
                 </header>
                 <main>
-
+                
                 </main>
                 <Footer />
             </div>
