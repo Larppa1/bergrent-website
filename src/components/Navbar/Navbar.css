@@ -27,6 +27,7 @@
         height: 20vh;
         max-height: 20vh;
     }
+    
     #navbar > div:last-of-type {
         height: 50%;
     }
