@@ -42,7 +42,8 @@ export default function Navbar(props) {
         contactLink.style.transition = 'opacity 2s ease-in'
     })
 
-    const dropdownPrimary = () => {
+    /*Animate primary dropdown menu*/
+    const dropdownPrimaryAnim = () => {
         if(!menuBtnClicked) {
             setMenuBtnClicked(true)
             document.getElementById('dropdown').style.marginRight = '0vw'
@@ -59,7 +60,8 @@ export default function Navbar(props) {
         }
     }
 
-    const dropdownSecondary = () => {
+    /*Animate secondary dropdown menu*/
+    const dropdownSecondaryAnim = () => {
         if(!clicked) {
             setClicked(true)
             document.getElementById('dropdown').style.marginRight = '35vw'
@@ -83,14 +85,14 @@ export default function Navbar(props) {
                 </div>
                 <div className='flex-1'></div>
                 <div className="flex-none dropdown dropdown-end">
-                    <button className="btn btn-square btn-ghost" onClick={dropdownPrimary}>
+                    <button className="btn btn-square btn-ghost" onClick={dropdownPrimaryAnim}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </button>
                     <ul id='dropdown' className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
                         <li><Link to='/'>Etusivu</Link></li>
                         <div className="dropdown">
                             <li tabIndex={0}>
-                                <Link onClick={dropdownSecondary}>Vuokraus</Link>
+                                <Link onClick={dropdownSecondaryAnim}>Vuokraus</Link>
                             </li>
                             <ul id='dropdownSecondary' tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
                                 <li><Link to='/vesijettivuokraus'>Jettivuokraus</Link></li>
