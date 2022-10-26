@@ -18,6 +18,10 @@
     display: none;
 }
 
+#navbar > div:nth-of-type(2) > button {
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
     #navbar {
         display: flex;

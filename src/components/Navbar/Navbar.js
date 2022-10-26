@@ -93,7 +93,7 @@ export default function Navbar(props) {
                     </button>
                     <ul id='dropdown' className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
                         <li><Link to='/'>Etusivu</Link></li>
-                        {/* <div className="dropdown">
+                        <div className="dropdown">
                             <li tabIndex={0}>
                                 <Link onClick={dropdownSecondaryAnim}>Vuokraus</Link>
                             </li>
@@ -102,7 +102,7 @@ export default function Navbar(props) {
                                 <li><Link to='/venevuokraus'>Venevuokraus</Link></li>
                                 <li><Link to='/mokkivuokraus'>Mökkivuokraus</Link></li>
                             </ul>
-                        </div> */}
+                        </div>
                         <li><Link to='/tietoja'>Tietoja</Link></li>
                         <li><Link to='/ota-yhteytta'>Ota yhteyttä</Link></li>
                     </ul>
