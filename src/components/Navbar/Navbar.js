@@ -6,42 +6,6 @@ export default function Navbar(props) {
     const [menuBtnClicked, setMenuBtnClicked] = useState(false)
     const [clicked, setClicked] = useState(false)
 
-    useEffect(() => {
-        const landingLink = document.getElementById('landingLink')
-        const rentLink = document.getElementById('rentLink')
-        const aboutLink = document.getElementById('aboutLink')
-        const contactLink = document.getElementById('contactLink')
-
-        if(window.innerWidth < 768) { return }
-
-        /*Underline nav item corresponding to current page*/
-        switch(props.page) {
-            case 'landing':
-                landingLink.style.textDecoration = 'underline';
-                break;
-            case 'rent':
-                rentLink.style.textDecoration = 'underline';
-                break;
-            case 'about':
-                aboutLink.style.textDecoration = 'underline';
-                break;
-            case 'contact':
-                contactLink.style.textDecoration = 'underline';
-                break;
-            default: break;
-        }
-
-        /*Animate nav items*/
-        landingLink.style.opacity = 1;
-        landingLink.style.transition = 'opacity 0.5s ease-in'
-        rentLink.style.opacity = 1
-        rentLink.style.transition = 'opacity 1s ease-in'
-        aboutLink.style.opacity = 1
-        aboutLink.style.transition = 'opacity 1.5s ease-in'
-        contactLink.style.opacity = 1
-        contactLink.style.transition = 'opacity 2s ease-in'
-    })
-
     /*Animate primary dropdown menu*/
     const dropdownPrimaryAnim = () => {
         if(!menuBtnClicked) {
@@ -79,6 +43,42 @@ export default function Navbar(props) {
             setClicked(false)
         }
     }
+
+    useEffect(() => {
+        const landingLink = document.getElementById('landingLink')
+        const rentLink = document.getElementById('rentLink')
+        const aboutLink = document.getElementById('aboutLink')
+        const contactLink = document.getElementById('contactLink')
+
+        if(window.innerWidth < 768) { return }
+
+        /*Underline nav item corresponding to current page*/
+        switch(props.page) {
+            case 'landing':
+                landingLink.style.textDecoration = 'underline';
+                break;
+            case 'rent':
+                rentLink.style.textDecoration = 'underline';
+                break;
+            case 'about':
+                aboutLink.style.textDecoration = 'underline';
+                break;
+            case 'contact':
+                contactLink.style.textDecoration = 'underline';
+                break;
+            default: break;
+        }
+
+        /*Animate nav items*/
+        landingLink.style.opacity = 1;
+        landingLink.style.transition = 'opacity 0.5s ease-in'
+        rentLink.style.opacity = 1
+        rentLink.style.transition = 'opacity 1s ease-in'
+        aboutLink.style.opacity = 1
+        aboutLink.style.transition = 'opacity 1.5s ease-in'
+        contactLink.style.opacity = 1
+        contactLink.style.transition = 'opacity 2s ease-in'
+    })
 
     if(window.innerWidth < 768) {
         return(
