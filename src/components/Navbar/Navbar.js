@@ -11,7 +11,7 @@ export default function Navbar(props) {
         if(!menuBtnClicked) {
             setMenuBtnClicked(true)
             document.getElementById('dropdown').style.marginRight = '0vw'
-            document.getElementById('dropdown').style.opacity = 0.99;
+            document.getElementById('dropdown').style.opacity = 1;
         }else {
             document.getElementById('dropdown').style.opacity = 0;
             document.getElementById('dropdown').style.transform = 'translate(0vw)'
@@ -29,7 +29,7 @@ export default function Navbar(props) {
             setClicked(true)
             document.getElementById('dropdown').style.marginRight = '35vw'
             document.getElementById('dropdownSecondary').style.display = 'inline'
-            document.getElementById('dropdownSecondary').style.opacity = 0.98;
+            document.getElementById('dropdownSecondary').style.opacity = 1;
         }else {
             document.getElementById('dropdown').style.marginRight = '0vw'
             document.getElementById('dropdownSecondary').style.display = 'none'
@@ -76,13 +76,13 @@ export default function Navbar(props) {
 
     if(window.innerWidth < 768) {
         return(
-            <div id='navbar' className="navbar bg-neutral">
+            <div id='navbar' className="navbar">
                 <div className="flex-none">
                     <Link className="btn btn-ghost text-xl" to='/'>Bergrent</Link>
                 </div>
                 <div className='flex-1'></div>
                 <div className="flex-none dropdown dropdown-end">
-                    <button className="btn btn-square btn-ghost" onClick={dropdownPrimaryAnim}>
+                    <button id='menuBtn' className="btn btn-square btn-ghost" onClick={dropdownPrimaryAnim}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </button>
                     <ul id='dropdown' className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">

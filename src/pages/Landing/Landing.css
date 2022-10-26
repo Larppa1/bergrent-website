@@ -1,0 +1,18 @@
+#landingHeader {
+    background-image: url('https://i.ibb.co/tBDCGDx/IMG-1057.jpg');
+    background-size: 150%;
+    background-position-x: -22vw;
+    background-position-y: -22vh;
+    background-repeat: no-repeat;
+    height: 35vh;
+}
+
+@media (min-width: 768px) {
+    #landingHeader {
+        background-image: url('https://i.ibb.co/tBDCGDx/IMG-1057.jpg');
+        background-size: 100%;
+        background-position-x: center;
+        background-position-y: -58vh;
+        height: 80vh;
+    }
+}

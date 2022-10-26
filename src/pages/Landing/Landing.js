@@ -6,7 +6,7 @@ export default function Landing() {
     if(window.innerWidth < 768) {
         return(
             <div className='container'>
-                <header>
+                <header id='landingHeader'>
                     <Navbar page="landing"/>
                 </header>
                 <main>
@@ -18,7 +18,7 @@ export default function Landing() {
     }else {
         return(
             <div className='container'>
-                <header>
+                <header id='landingHeader'>
                     <Navbar page="landing"/>
                 </header>
                 <main>

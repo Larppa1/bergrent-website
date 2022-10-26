@@ -4,6 +4,8 @@
     height: 10vh;
     max-height: 10vh;
     font-family: 'Montserrat';
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0.95;
 }
 
 #dropdown {
