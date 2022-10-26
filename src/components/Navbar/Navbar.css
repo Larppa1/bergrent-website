@@ -4,6 +4,18 @@
     height: 10vh;
     max-height: 10vh;
     font-family: 'Montserrat';
+    position: relative;
+}
+
+#dropdown {
+    margin-top: 3vh;
+    opacity: 0;
+}
+
+#dropdownSecondary {
+    margin-top: -4vh;
+    margin-right: -35vw;
+    opacity: 0;
 }
 
 @media (min-width: 768px) {
