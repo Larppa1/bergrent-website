@@ -9,12 +9,15 @@ export default function Navbar(props) {
     /*Animate primary dropdown menu*/
     const dropdownPrimaryAnim = () => {
         if(!menuBtnClicked) {
-            document.getElementById('dropdown').style.display = 'inline'
+            document.getElementById('dropdownSecondary').style.transition = 'all 0.4s ease-in-out'
+            document.getElementById('dropdown').style.opacity = '1'
             setMenuBtnClicked(true)
         }else {
-            document.getElementById('dropdown').style.display = 'none'
+            document.getElementById('dropdown').style.opacity = '0'
             document.getElementById('dropdown').style.marginRight = '2vw'
-            document.getElementById('dropdownSecondary').style.display = 'none'
+            document.getElementById('dropdownSecondary').style.opacity = '0'
+            document.getElementById('dropdownSecondary').style.transition = 'all 0.1s ease-in-out'
+            document.getElementById('dropdownSecondary').style.visibility = 'collapse'
             setMenuBtnClicked(false)
             setClicked(false)
         }
@@ -23,12 +26,16 @@ export default function Navbar(props) {
     /*Animate secondary dropdown menu*/
     const dropdownSecondaryAnim = () => {
         if(!clicked) {
+            document.getElementById('dropdownSecondary').style.transition = 'all 0.4s ease-in-out'
             document.getElementById('dropdown').style.marginRight = '35vw'
-            document.getElementById('dropdownSecondary').style.display = 'block'
+            document.getElementById('dropdownSecondary').style.opacity = '1'
+            document.getElementById('dropdownSecondary').style.visibility = 'visible'
             setClicked(true)
         }else {
             document.getElementById('dropdown').style.marginRight = '2vw'
-            document.getElementById('dropdownSecondary').style.display = 'none'
+            document.getElementById('dropdownSecondary').style.opacity = '0'
+            document.getElementById('dropdownSecondary').style.transition = 'all 0.1s ease-in-out'
+            document.getElementById('dropdownSecondary').style.visibility = 'collapse'
             setClicked(false)
         }
     }
@@ -87,15 +94,15 @@ export default function Navbar(props) {
                             <li tabIndex={0}>
                                 <Link onClick={dropdownSecondaryAnim}>Vuokraus</Link>
                             </li>
-                            <ul id='dropdownSecondary' tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
-                                <li><Link to='/vesijettivuokraus'>Jettivuokraus</Link></li>
-                                <li><Link to='/venevuokraus'>Venevuokraus</Link></li>
-                                <li><Link to='/mokkivuokraus'>Mökkivuokraus</Link></li>
-                            </ul>
                         </div>
                         <li><Link to='/tietoja'>Tietoja</Link></li>
                         <li><Link to='/ota-yhteytta'>Ota yhteyttä</Link></li>
-                    </ul>
+                </ul>
+                <ul id='dropdownSecondary' tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
+                                <li><Link to='/vesijettivuokraus'>Jettivuokraus</Link></li>
+                                <li><Link to='/venevuokraus'>Venevuokraus</Link></li>
+                                <li><Link to='/mokkivuokraus'>Mökkivuokraus</Link></li>
+                </ul>
                 {/* <div className="flex-none dropdown dropdown-end">
                     <button id='menuBtn' className="btn btn-square btn-ghost" onClick={dropdownPrimaryAnim}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
