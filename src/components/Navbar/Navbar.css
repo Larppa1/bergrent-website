@@ -9,14 +9,18 @@
 }
 
 #dropdown {
-    margin-top: 3vh;
-    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8vh;
+    margin-right: 2vw;
+    transition: all 0.5s ease-in-out;
 }
 
 #dropdownSecondary {
-    margin-top: -4vh;
-    margin-right: -35vw;
-    opacity: 0;
+    margin-left: 31vw;
+    margin-top: -3vh;
     display: none;
 }
 

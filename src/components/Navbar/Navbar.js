@@ -9,17 +9,12 @@ export default function Navbar(props) {
     /*Animate primary dropdown menu*/
     const dropdownPrimaryAnim = () => {
         if(!menuBtnClicked) {
+            document.getElementById('dropdown').style.display = 'inline'
             setMenuBtnClicked(true)
-            document.getElementById('dropdown').style.marginRight = '0vw'
-            document.getElementById('dropdown').style.opacity = 1;
-            document.getElementById('dropdown').style.transition = 'opacity 0.2s ease-in-out'
         }else {
-            document.getElementById('dropdown').style.opacity = 0;
-            document.getElementById('dropdown').style.transition = 'opacity 0.2s ease-in-out'
-            document.getElementById('dropdown').style.transform = 'translate(0vw)'
+            document.getElementById('dropdown').style.display = 'none'
+            document.getElementById('dropdown').style.marginRight = '2vw'
             document.getElementById('dropdownSecondary').style.display = 'none'
-            document.getElementById('dropdownSecondary').style.opacity = 0;
-            document.getElementById('dropdownSecondary').style.transition = 'opacity 0.2s ease-in-out'
             setMenuBtnClicked(false)
             setClicked(false)
         }
@@ -28,16 +23,12 @@ export default function Navbar(props) {
     /*Animate secondary dropdown menu*/
     const dropdownSecondaryAnim = () => {
         if(!clicked) {
-            setClicked(true)
             document.getElementById('dropdown').style.marginRight = '35vw'
             document.getElementById('dropdownSecondary').style.display = 'block'
-            document.getElementById('dropdownSecondary').style.opacity = 1
-            document.getElementById('dropdownSecondary').style.transition = 'opacity 0.2s ease-in-out'
+            setClicked(true)
         }else {
-            document.getElementById('dropdown').style.marginRight = '0vw'
+            document.getElementById('dropdown').style.marginRight = '2vw'
             document.getElementById('dropdownSecondary').style.display = 'none'
-            document.getElementById('dropdownSecondary').style.opacity = 0;
-            document.getElementById('dropdownSecondary').style.transition = 'opacity 0.2s ease-in-out'
             setClicked(false)
         }
     }
@@ -89,6 +80,26 @@ export default function Navbar(props) {
                     <button id='menuBtn' className="btn btn-square btn-ghost" onClick={dropdownPrimaryAnim}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </button>
+                </div>
+                <ul id='dropdown' className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
+                        <li><Link to='/'>Etusivu</Link></li>
+                        <div className="dropdown">
+                            <li tabIndex={0}>
+                                <Link onClick={dropdownSecondaryAnim}>Vuokraus</Link>
+                            </li>
+                            <ul id='dropdownSecondary' tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
+                                <li><Link to='/vesijettivuokraus'>Jettivuokraus</Link></li>
+                                <li><Link to='/venevuokraus'>Venevuokraus</Link></li>
+                                <li><Link to='/mokkivuokraus'>Mökkivuokraus</Link></li>
+                            </ul>
+                        </div>
+                        <li><Link to='/tietoja'>Tietoja</Link></li>
+                        <li><Link to='/ota-yhteytta'>Ota yhteyttä</Link></li>
+                    </ul>
+                {/* <div className="flex-none dropdown dropdown-end">
+                    <button id='menuBtn' className="btn btn-square btn-ghost" onClick={dropdownPrimaryAnim}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                    </button>
                     <ul id='dropdown' className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
                         <li><Link to='/'>Etusivu</Link></li>
                         <div className="dropdown">
@@ -104,7 +115,7 @@ export default function Navbar(props) {
                         <li><Link to='/tietoja'>Tietoja</Link></li>
                         <li><Link to='/ota-yhteytta'>Ota yhteyttä</Link></li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         )
     }else {
