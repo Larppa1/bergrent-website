@@ -3,24 +3,45 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 80%;
+    z-index: 0;
 }
 
 #countdown1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     opacity: 0;
     transition: all 1.5s ease-in-out;
+    min-width: 23%;
+    max-width: 23%;
 }
 
 #countdown2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     opacity: 0;
     transition: all 1.7s ease-in-out;
+    min-width: 23%;
+    max-width: 23%;
 }
 
 #countdown3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     opacity: 0;
     transition: all 1.9s ease-in-out;
+    min-width: 23%;
+    max-width: 23%;
 }
 
 #countdown4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     opacity: 0;
     transition: all 2.1s ease-in-out;
+    min-width: 23%;
+    max-width: 23%;
 }
