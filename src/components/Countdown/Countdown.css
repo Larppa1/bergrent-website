@@ -1,0 +1,26 @@
+#countdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+#countdown1 {
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+}
+
+#countdown2 {
+    opacity: 0;
+    transition: all 1.7s ease-in-out;
+}
+
+#countdown3 {
+    opacity: 0;
+    transition: all 1.9s ease-in-out;
+}
+
+#countdown4 {
+    opacity: 0;
+    transition: all 2.1s ease-in-out;
+}
