@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 
 export default function Landing() {
     useEffect(() => {
+        if(window.innerWidth >= 768) { return }
         document.getElementById('countdownTitle').style.opacity = 1
     })
 
