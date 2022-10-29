@@ -13,7 +13,7 @@ export default function Landing() {
 
     if(window.innerWidth < 768) {
         return(
-            <div className='container'>
+            <div className='container bg-base-100'>
                 <header id='landingHeader'>
                     <Navbar page="landing"/>
                     <section>
@@ -24,6 +24,10 @@ export default function Landing() {
                     </section>
                 </header>
                 <main id='landingMain'>
+                    <section>
+                        <div className='bg-base-200 shadow-xl'>
+                        </div>
+                    </section>
                 </main>
                 <Footer />
             </div>
