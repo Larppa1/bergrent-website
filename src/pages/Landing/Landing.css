@@ -4,7 +4,7 @@
     background-position-x: -22vw;
     background-position-y: -24vh;
     background-repeat: no-repeat;
-    height: 35vh;
+    height: 40vh;
 }
 
 #landingHeader > section > article > p {
@@ -15,7 +15,8 @@
     font-family: 'Montserrat';
     opacity: 0;
     transition: all 1.5s ease-in-out;
-    margin-bottom: 2vh;
+    padding-block-start: 4vh;
+    padding-block-end: 2vh;
 }
 
 #landingHeader > section:last-of-type {
