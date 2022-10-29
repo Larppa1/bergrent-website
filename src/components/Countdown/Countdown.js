@@ -19,7 +19,7 @@ export default function Countdown(props) {
                 const now = new Date().getTime()
                 const distance = countdownDate - now
                 setMonths(Math.floor(distance / (1000 * 60 * 60 * 24 * 30)))
-                setDays(Math.floor(distance / (1000 * 60 * 60 * 24)))
+                setDays(Math.floor(distance / (1000 * 60 * 60 * 24)) - (months * 30.436875).toPrecision(2))
                 setHours(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)))
                 setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)))
             }, 1000)
@@ -34,7 +34,7 @@ export default function Countdown(props) {
                 months
             </div> 
             <div id='countdown2' className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-            <span className="countdown font-mono text-5xl">{/* {days} */}3</span>
+            <span className="countdown font-mono text-5xl">{days}</span>
                 days
             </div> 
             <div id='countdown3' className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
