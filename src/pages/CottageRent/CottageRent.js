@@ -19,12 +19,14 @@ export default function CottageRent() {
         )
     }else {
         return(
-            <div className='container'>
+            <div>
                 <header>
                     <Navbar page="rent"/>
                 </header>
                 <main>
-
+                    <article className='prose' style={{minWidth: '100%', alignItems: 'center', justifyContent: 'center', display: 'flex', marginTop: '10%'}}>
+                        <h2 style={{fontSize: 48, fontWeight: 200, letterSpacing: 1.2}}>Tulossa ennen kauden alkua...</h2>
+                    </article>
                 </main>
                 <footer>
                     <Footer />

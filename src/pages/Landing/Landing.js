@@ -6,7 +6,6 @@ import { useEffect } from 'react'
 
 export default function Landing() {
     useEffect(() => {
-        if(window.innerWidth >= 768) { return }
         document.getElementById('countdownTitle').style.opacity = 1
     })
 
@@ -24,22 +23,25 @@ export default function Landing() {
                     </section>
                 </header>
                 <main id='landingMain'>
-                    <section>
-                        <div className='bg-base-200 shadow-xl'>
-                        </div>
-                    </section>
+                    
                 </main>
                 <Footer />
             </div>
         )
     }else {
         return(
-            <div className='container'>
+            <div className='bg-base-100'>
                 <header id='landingHeader'>
                     <Navbar page="landing"/>
                 </header>
-                <main>
-
+                    <section style={{position: 'absolute', top: '20%', width: '100%', justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column'}}>
+                        <article className='prose'>
+                            <p id='countdownTitle' style={{fontSize: 60, color: 'whitesmoke', marginBottom: 30, letterSpacing: 1.2, fontWeight: 200, width: '120%'}}>Jettikauden alkuun on enää</p>
+                        </article>
+                        <Countdown />
+                    </section>
+                <main id='landingMain'>
+                    
                 </main>
                 <Footer />
             </div>

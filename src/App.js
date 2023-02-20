@@ -1,7 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from './pages/About/About'
-import BoatRent from './pages/BoatRent/BoatRent'
 import Contact from './pages/Contact/Contact'
 import CottageRent from './pages/CottageRent/CottageRent'
 import JetSkiRent from './pages/JetSkiRent/JetSkiRent'
@@ -12,7 +11,6 @@ export default function App() {
     <Router>
       <Routes>
         <Route path='/tietoja' element={ <About/> }/>
-        <Route path='/venevuokraus' element={ <BoatRent/> }/>
         <Route path='/ota-yhteytta' element={ <Contact/> }/>
         <Route path='/mokkivuokraus' element={ <CottageRent/> }/>
         <Route path='/vesijettivuokraus' element={ <JetSkiRent/> }/>

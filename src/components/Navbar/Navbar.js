@@ -100,7 +100,6 @@ export default function Navbar(props) {
                 </ul>
                 <ul id='dropdownSecondary' tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
                                 <li><Link to='/vesijettivuokraus'>Jettivuokraus</Link></li>
-                                <li><Link to='/venevuokraus'>Venevuokraus</Link></li>
                                 <li><Link to='/mokkivuokraus'>Mökkivuokraus</Link></li>
                 </ul>
                 {/* <div className="flex-none dropdown dropdown-end">
@@ -140,7 +139,6 @@ export default function Navbar(props) {
                             </a>
                             <ul className="p-2 bg-neutral">
                                 <li><Link to='/vesijettivuokraus'>Jettivuokraus</Link></li>
-                                <li><Link to='/venevuokraus'>Venevuokraus</Link></li>
                                 <li><Link to='/mokkivuokraus'>Mökkivuokraus</Link></li>
                             </ul>
                         </li>

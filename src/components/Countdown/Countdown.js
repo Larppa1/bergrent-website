@@ -30,20 +30,20 @@ export default function Countdown(props) {
     return(
         <div id='countdown' className="text-center auto-cols-max">
             <div id='countdown1' className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                <span className="countdown font-mono text-5xl">{months}</span>
-                months
+                <span className="countdown font-mono text-5xl">{months > 12 || days > 31 || hours > 23 || minutes > 60 ? '0' : months}</span>
+                <span style={{fontSize: window.innerWidth < 768 ? 12 : 16}}>{months === 1 ? 'kuukausi' : 'kuukautta'}</span>
             </div> 
             <div id='countdown2' className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-            <span className="countdown font-mono text-5xl">{days}</span>
-                days
+            <span className="countdown font-mono text-5xl">{months > 12 || days > 31 || hours > 23 || minutes > 60 ? '0' : days}</span>
+                <span style={{fontSize: window.innerWidth < 768 ? 12 : 16}}>{days === 1 ? 'päivä' : 'päivää'}</span>
             </div> 
             <div id='countdown3' className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-            <span className="countdown font-mono text-5xl">{hours}</span>
-                hours
+            <span className="countdown font-mono text-5xl">{months > 12 || days > 31 || hours > 23 || minutes > 60 ? '0' : hours}</span>
+                <span style={{fontSize: window.innerWidth < 768 ? 12 : 16}}>{hours === 1 ? 'tunti' : 'tuntia'}</span>
             </div> 
             <div id='countdown4' className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-            <span className="countdown font-mono text-5xl">{minutes}</span>
-                min
+            <span className="countdown font-mono text-5xl">{months > 12 || days > 31 || hours > 23 || minutes > 60 ? '0' : minutes}</span>
+                <span style={{fontSize: window.innerWidth < 768 ? 12 : 16}}>{minutes === 1 ? 'minuutti' : 'minuuttia'}</span>
             </div>
         </div>
     )

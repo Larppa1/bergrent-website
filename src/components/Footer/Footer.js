@@ -5,9 +5,9 @@ export default function Footer() {
     return(
         <footer id='footer' className="footer footer-center p-10 bg-base-200 text-base-content rounded">
             <div className="grid grid-flow-col gap-4">
+                <Link className="link link-hover" to='/vuokrausehdot'>Vuokrausehdot</Link>
                 <Link className="link link-hover" to='/tietoja'>Tietoja</Link>
                 <Link className="link link-hover" to='/ota-yhteytta'>Ota yhteyttä</Link>
-                <Link className="link link-hover" to='/vuokrausehdot'>Vuokrausehdot</Link>
             </div> 
             <div>
                 <div className="grid grid-flow-col gap-4">
@@ -17,7 +17,7 @@ export default function Footer() {
                 </div>
             </div> 
             <div>
-                <p>© 2022 - Bergrent</p>
+                <p>© 2022-2023 - Bergrent</p>
             </div>
         </footer>
     )
