@@ -34,14 +34,25 @@ export default function Landing() {
                 <header id='landingHeader'>
                     <Navbar page="landing"/>
                 </header>
-                    <section style={{position: 'absolute', top: '20%', width: '100%', justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column'}}>
-                        <article className='prose'>
-                            <p id='countdownTitle' style={{fontSize: 60, color: 'whitesmoke', marginBottom: 30, letterSpacing: 1.2, fontWeight: 200, width: '120%'}}>Jettikauden alkuun on enää</p>
+                    <section style={{position: 'absolute', top: '15%', width: '100%', justifyContent: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column'}}>
+                        <article>
+                            <p id='countdownTitle' style={{fontSize: 84, color: 'whitesmoke', marginBottom: 50, letterSpacing: 1.2, fontWeight: 100, width: '100%'}}>Jettikauden alkuun on enää</p>
                         </article>
                         <Countdown />
                     </section>
                 <main id='landingMain'>
-                    
+                    <section>
+                        <article className='prose'>
+                            <h3 style={{fontSize: 40, letterSpacing: 1.2, fontWeight: 200}}>Mitä voit odottaa kaudelta 2023?</h3>
+                            <p style={{fontSize: 18, fontWeight: 300}}>Tänä vuonna aiomme panostaa entistä enemmän asiakaskokemuksen parantamiseen sekä toiminnan laajentamiseen. Tällä kaudella tarjontaamme kuuluu:</p>
+                            <ul>
+                                <li style={{fontSize: 20, fontWeight: 300}}>2kpl Sea Doo vesijettiä (Spark & Trixx)</li>
+                                <li style={{fontSize: 20, fontWeight: 300}}>2kpl modernisti varusteltua mökkiä Ylläkseltä aivan laskettelurinteiden kupeesta</li>
+                                <li style={{fontSize: 20, fontWeight: 300}}>Mahdollisesti jotain muutakin...</li>
+                            </ul>
+                            <p style={{fontSize: 22, fontWeight: 200, letterSpacing: 0.8}}>Seuraa meitä someissa @bergrent.fi jotta pysyt kartalla <span style={{fontWeight: 600}}>kesän säännöllisistä arvonnoista</span> sekä uusista lisäyksistä tarjontaamme!</p>
+                        </article>
+                    </section>
                 </main>
                 <Footer />
             </div>

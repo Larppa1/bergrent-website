@@ -17,7 +17,7 @@ export default function Footer() {
                 </div>
             </div> 
             <div>
-                <p>© 2022-2023 - Bergrent</p>
+                <p>© 2022-2023 - BergRent Oy</p>
             </div>
         </footer>
     )
