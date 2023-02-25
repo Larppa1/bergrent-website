@@ -48,9 +48,13 @@
 @media (min-width: 768px) {
     #landingHeader {
         background-image: url('https://i.ibb.co/ChR4J9z/IMG-1057.jpg');
-        background-size: 110%;
+        background-size: 105%;
         background-position-x: center;
         background-position-y: -58vh;
         height: 70vh;
+    }
+    #landingMain {
+        display: flex;
+        flex-direction: row;
     }
 }
