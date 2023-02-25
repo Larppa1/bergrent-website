@@ -53,4 +53,8 @@
         background-position-y: -58vh;
         height: 70vh;
     }
+    #landingMain {
+        display: flex;
+        flex-direction: row;
+    }
 }
