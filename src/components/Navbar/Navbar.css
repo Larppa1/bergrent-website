@@ -1,9 +1,3 @@
-@media (max-width: 768px) {
-    #navbar {
-        max-width: 96.1%;
-    }
-}
-
 #navbar {
     color: white;
     min-height: 10vh;
