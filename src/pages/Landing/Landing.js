@@ -10,7 +10,7 @@ const OfferList = () => {
         return (
             <>
                 <p style={{fontSize: 20, fontWeight: 300}}><span style={{fontWeight: 600}}>2kpl</span> uudenkarheaa Sea Doo vesijettiä (Spark & Trixx)</p>
-                <p style={{fontSize: 20, fontWeight: 300}}><span style={{fontWeight: 600}}>2kpl</span> modernisti varusteltua mökkiä Ylläkseltä aivan laskettelurinteiden kupeesta</p>
+                <p style={{fontSize: 20, fontWeight: 300}}><span style={{fontWeight: 600}}>2kpl</span> modernisti varusteltua mökkiä Ylläkseltä näppärien kulkuyhteyksien varrelta</p>
                 <p style={{fontSize: 20, fontWeight: 300}}>Mahdollisesti jotain muutakin...</p>
             </>
         )
@@ -18,7 +18,7 @@ const OfferList = () => {
         return (
             <ul>
                 <li style={{fontSize: 20, fontWeight: 300}}>2kpl uudenkarheaa Sea Doo vesijettiä (Spark & Trixx)</li>
-                <li style={{fontSize: 20, fontWeight: 300}}>2kpl modernisti varusteltua mökkiä Ylläkseltä aivan laskettelurinteiden kupeesta</li>
+                <li style={{fontSize: 20, fontWeight: 300}}>2kpl modernisti varusteltua mökkiä Ylläkseltä näppärien kulkuyhteyksien varrelta</li>
                 <li style={{fontSize: 20, fontWeight: 300}}>Mahdollisesti jotain muutakin...</li>
             </ul>
         )
