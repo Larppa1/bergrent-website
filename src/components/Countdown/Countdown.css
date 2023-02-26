@@ -2,33 +2,37 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 80%;
+    width: 90%;
+    height: 12vh;
 }
 
 #countdown1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     opacity: 0;
     transition: all 1.5s ease-in-out;
-    min-width: 23%;
-    max-width: 23%;
+    min-width: 21%;
+    max-width: 21%;
 }
 
 #countdown2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     opacity: 0;
     transition: all 1.7s ease-in-out;
-    min-width: 23%;
-    max-width: 23%;
+    min-width: 21%;
+    max-width: 21%;
 }
 
 #countdown3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     opacity: 0;
     transition: all 1.9s ease-in-out;
     min-width: 23%;
@@ -39,10 +43,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     opacity: 0;
     transition: all 2.1s ease-in-out;
-    min-width: 23%;
-    max-width: 23%;
+    min-width: 21%;
+    max-width: 21%;
 }
 
 #countdownTime {

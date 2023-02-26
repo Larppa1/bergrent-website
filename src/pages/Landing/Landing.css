@@ -4,7 +4,7 @@
     background-position-x: -22vw;
     background-position-y: -24vh;
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 45vh;
 }
 
 #countdownSection {
@@ -60,6 +60,7 @@
         padding-left: 3vw;
     }
     #landingMain > section:first-of-type {
+        text-align: left;
         width: 50%;
     }
     #landingMain > section:last-of-type {
