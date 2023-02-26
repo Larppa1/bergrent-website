@@ -1,5 +1,13 @@
 #footer {
-    min-height: 25vh;
-    height: 25vh;
-    max-height: 25vh;
+    min-height: 32vh;
+    height: 32vh;
+    max-height: 32vh;
+}
+
+@media (min-width: 1200px)  {
+    #footer {
+        min-height: 25vh;
+        height: 25vh;
+        max-height: 25vh;
+    }
 }

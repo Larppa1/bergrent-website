@@ -6,7 +6,7 @@
     font-family: 'Montserrat';
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0.95;
-    z-index: 12;
+    z-index: 10;
     position: absolute;
     top: 0;
 }
@@ -20,7 +20,7 @@
     margin-right: 2vw;
     opacity: 0;
     transition: all 0.2s ease-in-out;
-    z-index: 12;
+    z-index: 10;
 }
 
 #dropdownSecondary {

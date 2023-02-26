@@ -5,6 +5,26 @@ import Countdown from '../../components/Countdown/Countdown'
 import { useEffect, useState } from 'react'
 import '../../../node_modules/react-image-gallery/styles/css/image-gallery.css';
 
+const OfferList = () => {
+    if (window.innerWidth < 768) {
+        return (
+            <>
+                <p style={{fontSize: 20, fontWeight: 300}}><span style={{fontWeight: 600}}>2kpl</span> uudenkarheaa Sea Doo vesijettiä (Spark & Trixx)</p>
+                <p style={{fontSize: 20, fontWeight: 300}}><span style={{fontWeight: 600}}>2kpl</span> modernisti varusteltua mökkiä Ylläkseltä aivan laskettelurinteiden kupeesta</p>
+                <p style={{fontSize: 20, fontWeight: 300}}>Mahdollisesti jotain muutakin...</p>
+            </>
+        )
+    } else {
+        return (
+            <ul>
+                <li style={{fontSize: 20, fontWeight: 300}}>2kpl uudenkarheaa Sea Doo vesijettiä (Spark & Trixx)</li>
+                <li style={{fontSize: 20, fontWeight: 300}}>2kpl modernisti varusteltua mökkiä Ylläkseltä aivan laskettelurinteiden kupeesta</li>
+                <li style={{fontSize: 20, fontWeight: 300}}>Mahdollisesti jotain muutakin...</li>
+            </ul>
+        )
+    }
+}
+
 export default function Landing() {
     const [index, setIndex] = useState(0);
 
@@ -42,7 +62,7 @@ export default function Landing() {
             </header>
                 <section id="countdownSection">
                     <article>
-                        <p id='countdownTitle' style={{fontSize: window.innerWidth < 768 ? 48 : 84, color: 'whitesmoke', marginBottom: 50, letterSpacing: 1.2, fontWeight: 100}}>Jettikauden alkuun on enää</p>
+                        <p id='countdownTitle' style={{fontSize: window.innerWidth < 768 ? 32 : 84, color: 'whitesmoke', marginBottom: window.innerWidth < 768 ? 10 : 50, letterSpacing: 1.2, fontWeight: 100}}>Jettikauden alkuun on enää</p>
                     </article>
                     <Countdown />
                 </section>
@@ -51,11 +71,7 @@ export default function Landing() {
                     <article className='prose'>
                         <h3 style={{fontSize: 40, letterSpacing: 1.2, fontWeight: 200}}>Mitä voit odottaa kaudelta 2023?</h3>
                         <p style={{fontSize: 18, fontWeight: 300}}>Tänä vuonna aiomme panostaa entistä enemmän asiakaskokemuksen parantamiseen sekä toiminnan laajentamiseen. Tällä kaudella tarjontaamme kuuluu:</p>
-                        <ul>
-                            <li style={{fontSize: 20, fontWeight: 300}}>2kpl uudenkarheaa Sea Doo vesijettiä (Spark & Trixx)</li>
-                            <li style={{fontSize: 20, fontWeight: 300}}>2kpl modernisti varusteltua mökkiä Ylläkseltä aivan laskettelurinteiden kupeesta</li>
-                            <li style={{fontSize: 20, fontWeight: 300}}>Mahdollisesti jotain muutakin...</li>
-                        </ul>
+                        <OfferList />
                         <p style={{fontSize: 22, fontWeight: 200, letterSpacing: 0.8}}>Seuraa meitä someissa @bergrent.fi jotta pysyt kartalla <span style={{fontWeight: 600}}>kesän säännöllisistä arvonnoista</span> sekä uusista lisäyksistä tarjontaamme!</p>
                     </article>
                 </section>
