@@ -15,7 +15,7 @@ export default function JetSkiRent() {
                 </article>
                 <section style={{minWidth: '100%', display: 'flex', flexDirection: 'column', paddingInline: '2%'}}>
                     <article className='prose'>
-                        <h3>Meiltä löytyvät seuraavat vesijetit:</h3>
+                        <h3>Alta löydät tämän hetkisen valikoimamme:</h3>
                     </article>
                     <section style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginBlock: '2%'}}>
                         <div style={{minHeight: 500, width: '40%', display: 'flex', flexDirection: 'row', borderRadius: 14}}>
@@ -39,7 +39,7 @@ export default function JetSkiRent() {
                         </div>
                         <div style={{minHeight: 500, width: '40%', display: 'flex', flexDirection: 'row', borderRadius: 14}}>
                             <article className='prose' style={{minHeight: '100%', width: '40%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2%', borderRight: '0.2px solid black'}}>
-                                <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>2022 Sea Doo Spark</h4>
+                                <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>2022 Sea Doo Spark 2UP</h4>
                                 <div style={{width: '100%'}}>
                                     <div style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>
                                         <ul>
