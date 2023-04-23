@@ -2,36 +2,63 @@ import './JetSkiRent.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 
-export default function JetSkiRent() {
-    if(window.innerWidth < 768) {
-        return(
-            <div className='container'>
-                <header>
-                    <Navbar page="rent"/>
-                </header>
-                <main>
-
-                </main>
-                <footer>
-                    <Footer />
-                </footer>
-            </div>
-        )
-    }else {
-        return(
-            <div>
-                <header>
-                    <Navbar page="rent"/>
-                </header>
-                <main>
-                    <article className='prose' style={{minWidth: '100%', alignItems: 'center', justifyContent: 'center', display: 'flex', marginTop: '10%'}}>
-                        <h2 style={{fontSize: 48, fontWeight: 200, letterSpacing: 1.2}}>Tulossa ennen kauden alkua...</h2>
+export default function JetSkiRent() {  
+    return (
+        <div>
+            <header>
+                <Navbar page="rent"/>
+            </header>
+            <main>
+                <article className='prose' style={{minWidth: '100%', display: 'flex', flexDirection: 'column', paddingTop: '10%', paddingBottom: '2%', paddingInline: '2%'}}>
+                    <h2 style={{fontSize: 48, fontWeight: 200, letterSpacing: 1.2}}>Vesijettien vuokraus</h2>
+                    <p style={{marginTop: '-2%'}}>Haluatko vauhtia kuumaan kesäpäivään? Suuntaa järvelle ja lähde seikkailemaan vesille yksin tai kaverisi kanssa!</p>
+                </article>
+                <section style={{minWidth: '100%', display: 'flex', flexDirection: 'column', paddingInline: '2%'}}>
+                    <article className='prose'>
+                        <h3>Meiltä löytyvät seuraavat vesijetit:</h3>
                     </article>
-                </main>
-                <footer>
-                    <Footer />
-                </footer>
-            </div>
-        )
-    }
+                    <section style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginBlock: '2%'}}>
+                        <div style={{minHeight: 500, minWidth: '40%', display: 'flex', flexDirection: 'row', backgroundColor: '#FCFCFC', borderRadius: 14}}>
+                            <div style={{minHeight: '100%', minWidth: '60%'}}>
+                                <img />
+                            </div>
+                            <article className='prose' style={{minHeight: '100%', minWidth: '40%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2%', borderLeft: '0.2px solid black'}}>
+                                <h4 style={{textAlign: 'center'}}>2022 Sea Doo Spark Trixx 2UP</h4>
+                                <div style={{minWidth: '100%'}}>
+                                    <ul>
+                                        <li>Teho: 90hv</li>
+                                        <li>Kulutus: 9l/h</li>
+                                        <li>Istumapaikat: 2</li>
+                                        <li>Trim-ominaisuus: kyllä</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
+                        <div style={{minHeight: 500, minWidth: '40%', display: 'flex', flexDirection: 'row', backgroundColor: '#FCFCFC', borderRadius: 14}}>
+                            <article className='prose' style={{minHeight: '100%', minWidth: '40%', display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '2%', borderRight: '0.2px solid black'}}>
+                                <h4 style={{textAlign: 'center'}}>2022 Sea Doo Spark</h4>
+                                <div style={{minWidth: '100%'}}>
+                                    <ul>
+                                        <li>Teho: 60hv</li>
+                                        <li>Kulutus: 7.34l/h</li>
+                                        <li>Istumapaikat: 2</li>
+                                        <li>Trim-ominaisuus: ei</li>
+                                    </ul>
+                                </div>
+                            </article>
+                            <div style={{minHeight: '100%', minWidth: '60%'}}>
+                                
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <article className='prose' style={{minWidth: '100%', alignItems: 'center', display: 'flex', flexDirection: 'column', marginBottom: '2%'}}>
+                    <p>Varauskalenteri ja lisätietoja löytyy Nettivuokrauksen sivuilta, pääset sinne painamalla <a href='https://www.nettivuokraus.com/vesijetit/vesijetteja-tampere-2kpl/534181/'>tästä.</a></p>
+                </article>
+            </main>
+            <footer>
+                <Footer />
+            </footer>
+        </div>
+    )
 }
