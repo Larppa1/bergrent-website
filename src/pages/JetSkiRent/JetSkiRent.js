@@ -33,7 +33,13 @@ export default function JetSkiRent() {
                                             <li>Trim-ominaisuus: kyllä</li>
                                         </ul>
                                     </div>
-                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>Hinnat alkaen 99€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', textDecoration: 'underline'}}>Hinnasto</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>2h - 99€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>4h - 139€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>8h - 169€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>12h - 189€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>24h - 229€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-start'}}>Viikonloppu - 469€</h4>
                                 </div>
                             </article>
                         </div>
@@ -49,7 +55,13 @@ export default function JetSkiRent() {
                                             <li>Trim-ominaisuus: ei</li>
                                         </ul>
                                     </div>
-                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>Hinnat alkaen 89€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end', textDecoration: 'underline'}}>Hinnasto</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>2h - 89€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>4h - 109€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>8h - 159€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>12h - 179€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>24h - 209€</h4>
+                                    <h4 style={{width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'flex-end'}}>Viikonloppu - 399€</h4>
                                 </div>
                             </article>
                             <div style={{minHeight: '100%', width: '60%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
@@ -59,7 +71,7 @@ export default function JetSkiRent() {
                     </section>
                 </section>
                 <article className='prose' style={{minWidth: '100%', alignItems: 'center', display: 'flex', flexDirection: 'column', marginBottom: '2%'}}>
-                    <p>Varauskalenteri ja hinnasto löytyvät Nettivuokrauksen sivuilta, pääset sinne painamalla <a href='https://www.nettivuokraus.com/vesijetit/vesijetteja-tampere-2kpl/534181/'>tästä.</a></p>
+                    <p>Varauskalenteri löytyy Nettivuokrauksen sivuilta, pääset sinne painamalla <a href='https://www.nettivuokraus.com/vesijetit/vesijetteja-tampere-2kpl/534181/'>tästä.</a></p>
                 </article>
             </main>
             <footer>
