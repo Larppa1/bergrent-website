@@ -84,6 +84,10 @@
     font-weight: 200;
     letter-spacing: 1.2;
   }
+  #titleContent {
+    margin-top: -1%;
+    font-size: 18px;
+  }
   .mainContent {
     align-items: flex-start;
   }
