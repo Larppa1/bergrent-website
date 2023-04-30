@@ -9,13 +9,13 @@ export default function JetSkiRent() {
                 <Navbar page="rent"/>
             </header>
             <main>
-                <article className='prose' style={{minWidth: '100%', display: 'flex', flexDirection: 'column', paddingTop: '10%', paddingBottom: '2%', paddingInline: '2%'}}>
-                    <h2 style={{fontSize: 48, fontWeight: 200, letterSpacing: 1.2}}>Vesijettien vuokraus</h2>
-                    <p style={{marginTop: '-2%'}}>Haluatko vauhtia kuumaan kesäpäivään? Suuntaa järvelle ja lähde seikkailemaan vesille yksin tai kaverisi kanssa!</p>
+                <article className='prose titleContainer'>
+                    <h2 id='title'>Vesijettien vuokraus</h2>
+                    <p id='titleContent'>Haluatko vauhtia kuumaan kesäpäivään? Suuntaa järvelle ja lähde seikkailemaan vesille yksin tai kaverisi kanssa!</p>
                 </article>
-                <section style={{minWidth: '100%', display: 'flex', flexDirection: 'column', paddingInline: '2%'}}>
+                <section className='mainContent'>
                     <article className='prose'>
-                        <h3>Alta löydät tämän hetkisen valikoimamme:</h3>
+                        <h3 id='subtitle'>Alta löydät tämän hetkisen valikoimamme:</h3>
                     </article>
                     <section style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', marginBlock: '2%'}}>
                         <div style={{minHeight: 500, width: '40%', display: 'flex', flexDirection: 'row', borderRadius: 14}}>

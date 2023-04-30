@@ -43,7 +43,6 @@ export default function Navbar(props) {
     useEffect(() => {
         const landingLink = document.getElementById('landingLink')
         const rentLink = document.getElementById('rentLink')
-        const aboutLink = document.getElementById('aboutLink')
         const contactLink = document.getElementById('contactLink')
 
         if(window.innerWidth < 768) { return }
@@ -56,9 +55,6 @@ export default function Navbar(props) {
             case 'rent':
                 rentLink.style.textDecoration = 'underline';
                 break;
-            case 'about':
-                aboutLink.style.textDecoration = 'underline';
-                break;
             case 'contact':
                 contactLink.style.textDecoration = 'underline';
                 break;
@@ -70,8 +66,6 @@ export default function Navbar(props) {
         landingLink.style.transition = 'opacity 0.6s ease-in'
         rentLink.style.opacity = 1
         rentLink.style.transition = 'opacity 0.8s ease-in'
-        aboutLink.style.opacity = 1
-        aboutLink.style.transition = 'opacity 1s ease-in'
         contactLink.style.opacity = 1
         contactLink.style.transition = 'opacity 1.2s ease-in'
     })
@@ -95,7 +89,6 @@ export default function Navbar(props) {
                                 <Link onClick={dropdownSecondaryAnim}>Vuokraus</Link>
                             </li>
                         </div>
-                        <li><Link to='/tietoja'>Tietoja</Link></li>
                         <li><Link to='/ota-yhteytta'>Ota yhteyttä</Link></li>
                 </ul>
                 <ul id='dropdownSecondary' tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-neutral rounded-box w-52">
@@ -122,7 +115,6 @@ export default function Navbar(props) {
                                 <li><Link to='/mokkivuokraus'>Mökkivuokraus</Link></li>
                             </ul>
                         </li>
-                        <li id='aboutLink'><Link to='/tietoja'>Tietoja</Link></li>
                         <li id='contactLink'><Link to='/ota-yhteytta'>Ota yhteyttä</Link></li>
                     </ul>
                 </div>

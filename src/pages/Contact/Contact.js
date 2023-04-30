@@ -9,11 +9,11 @@ export default function Contact() {
                 <Navbar page="contact"/>
             </header>
             <main>
-                <article className='prose' style={{width: '50%', display: 'flex', flexDirection: 'column', paddingTop: '10%', paddingBottom: '2%', paddingInline: '2%'}}>
-                    <h2 style={{fontSize: 48, fontWeight: 200, letterSpacing: 1.2}}>Yhteydenotot</h2>
-                    <p style={{marginTop: '-2%'}}>Mikäli sinulla on kysymyksiä, ota yhteyttä meihin - autamme mielellämme! Pyrimme vastaamaan kaikkiin yhteydenottoihin kahden arkipäivän sisällä.</p>
+                <article className='prose titleContainer'>
+                    <h2 id='title'>Yhteydenotot</h2>
+                    <p id='titleContent'>Mikäli sinulla on kysymyksiä, ota yhteyttä meihin - autamme mielellämme! Pyrimme vastaamaan kaikkiin yhteydenottoihin kahden arkipäivän sisällä.</p>
                 </article>
-                <article className='prose' style={{width: '50%', display: 'flex', flexDirection: 'row', paddingInline: '2%', paddingBottom: '15%', justifyContent: 'space-between'}}>
+                <article className='prose contactDetailsContainer'>
                     <section>
                         <h3>Myynti</h3>
                         <p>myynti@bergrent.fi</p>
