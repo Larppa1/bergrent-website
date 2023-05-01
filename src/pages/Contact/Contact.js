@@ -16,10 +16,10 @@ export default function Contact() {
                 <article className='prose contactDetailsContainer'>
                     <section>
                         <h3>Myynti</h3>
-                        <p>myynti@bergrent.fi</p>
-                        <p>+358 40 123 4567</p>
+                        <p>anton@bergrent.fi</p>
+                        <p>+358 50 401 0006</p>
                     </section>
-                    <section>
+                    {/* <section>
                         <h3>Vesijetit</h3>
                         <p>anton@bergrent.fi</p>
                         <p>+358 40 123 4567</p>
@@ -28,7 +28,7 @@ export default function Contact() {
                         <h3>Mökit</h3>
                         <p>thomas@bergrent.fi</p>
                         <p>+358 40 123 4567</p>
-                    </section>
+                    </section> */}
                 </article>
             </main>
             <Footer />
