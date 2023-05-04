@@ -62,7 +62,7 @@ export default function Landing() {
             </header>
                 <section id="countdownSection">
                     <article>
-                        <p id='countdownTitle' style={{fontSize: window.innerWidth < 768 ? 32 : 84, color: 'whitesmoke', marginBottom: window.innerWidth < 768 ? 10 : 50, letterSpacing: 1.2, fontWeight: 100}}>Jettikauden alkuun on enää</p>
+                        <p id='countdownTitle' style={{fontSize: window.innerWidth < 768 ? 32 : 84, color: 'whitesmoke', marginBottom: window.innerWidth < 768 ? 10 : 50, letterSpacing: 1.2, fontWeight: 100}}>Jettikautta on jäljellä vielä</p>
                     </article>
                     <Countdown />
                 </section>

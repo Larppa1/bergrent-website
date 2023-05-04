@@ -6,7 +6,7 @@ export default function Countdown(props) {
     const [days, setDays] = useState(0)
     const [hours, setHours] = useState(0)
     const [minutes, setMinutes] = useState(0)
-    const countdownDate = new Date("May 1, 2023 00:00:01").getTime()
+    const countdownDate = new Date("August 31, 2023 23:59:59").getTime()
 
     useEffect(() => {
         document.getElementById('countdown1').style.opacity = 1
